@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#home-screen{
+
+    width: 100vw;
+    height: 100vh;
+    background-color: honeydew;
+    text-align: center;
+}
+
+#welcome-text{
+    padding-top: 2%;
+}
+
+#change-bg-color{
+    color: brown;
+    margin-top: 3%;
+}
+
+.main-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    margin-top: 3%;
+}
+
+#secret-text{
+    position: absolute;
+    top: 80%;
+    right: 25%;
+}
+
+@keyframes scaleImg{
+    0%{width: 15%;}
+    50%{width: 30%;}
+    100%{width: 15%;}
+}
+
+.animate-img{
+    animation: scaleImg 10s;
+}
