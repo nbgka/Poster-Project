@@ -2,43 +2,191 @@
     margin: 0;
     padding: 0;
 }
-#home-screen{
 
+body{
+    background-color: black;
+}
+
+#home-screen{
     width: 100vw;
     height: 100vh;
-    background-color: honeydew;
+    background-color: black;
     text-align: center;
 }
 
-#welcome-text{
-    padding-top: 2%;
-}
-
-#change-bg-color{
-    color: brown;
-    margin-top: 3%;
-}
-
-.main-img{
-    display: block;
+#bg-one{
+    width: 40vw;
+    height: 100vh;
     margin-left: auto;
     margin-right: auto;
-    width: 15%;
-    margin-top: 3%;
 }
 
-#secret-text{
+#bg-two{
+    width: 40vw;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.poster-bg img{
+    width: 40vw;
+    height: 100vh;
+}
+
+.main-img img{
+    width: 50%;
     position: absolute;
-    top: 80%;
-    right: 25%;
+    top: 30%;
+    right: 20%;
 }
 
-@keyframes scaleImg{
-    0%{width: 15%;}
-    50%{width: 30%;}
-    100%{width: 15%;}
+#mannequin-img{
+    width: 50%;
+    position: absolute;
+    top: 30%;
+    right: 20%;
+}
+
+.bold-type-b h1{
+    font-family: 'Stalinist One';font-size: 150px;
+    color: #FF6847;
+    position: absolute;
+    margin-left: 33%;
+}
+
+.bold-type-o h1{
+    font-family: 'Stalinist One';font-size: 150px;
+    color: #9DA1F5;
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 53%;
+}
+
+.bold-type-d h1{
+    font-family: 'Stalinist One';font-size: 150px;
+    color: #2930CF;
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 33%;
+}
+
+.bold-type-y h1{
+    font-family: 'Stalinist One';font-size: 150px;
+    color: #CC29CF;
+    position: absolute;
+    margin-top: 35%;
+    margin-left: 53%;
+}
+
+#b-letter{
+    position: absolute;
+    margin-left: 33%; 
+}
+
+#o-letter{
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 53%;
+}
+
+#d-letter{
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 33%; 
+}
+
+#y-letter{
+    position: absolute;
+    margin-top: 35%;
+    margin-left: 53%;
+}
+
+.line-one h2{
+    font-family: 'VT323';font-size: 80px;
+    color: #1E1E1E;
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 33%;
+}
+
+.line-two h2{
+    font-family: 'VT323';font-size: 80px;
+    color: #A4CF29;
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 30%;
+}
+
+.line-three h2{
+    font-family: 'VT323';font-size: 80px;
+    color: #1E1E1E;
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 50%;
+}
+
+.line-four h2{
+    font-family: 'VT323';font-size: 80px;
+    color: #1E1E1E;
+    position: absolute;
+    margin-top: 35%;
+    margin-left: 50%;
+}
+
+.line-five h2{
+    font-family: 'VT323';font-size: 80px;
+    color: #1E1E1E;
+    position: absolute;
+    margin-top: 40%;
+    margin-left: 50%;
+}
+
+@keyframes marginMove{
+    0%{margin-right: 0%;}
+    50%{margin-right: 14%;}
+    100%{margin-right: 0%;}
 }
 
 .animate-img{
-    animation: scaleImg 10s;
+    animation: marginMove 15s;
+}
+
+@keyframes marginMoveLetterB{
+    0%{margin-top: 0%;}
+    50%{margin-top: 10%;}
+    100%{margin-top: 0%;}
+}
+
+.animate-letter-b{
+    animation: marginMoveLetterB 15s;
+}
+
+@keyframes marginMoveLetterO{
+    0%{margin-left: 53%;}
+    50%{margin-left: 50%;}
+    100%{margin-left: 53%;}
+}
+
+.animate-letter-o{
+    animation: marginMoveLetterO 20s;
+}
+
+@keyframes marginMoveLetterD{
+    0%{margin-left: 33%;}
+    50%{margin-left: 31%;}
+    100%{margin-left:33%;}
+}
+
+.animate-letter-d{
+    animation: marginMoveLetterD 15s;
+}
+
+@keyframes marginMoveLetterY{
+    0%{margin-top: 35%;}
+    50%{margin-top: 25%;}
+    100%{margin-top:35%;}
+}
+
+.animate-letter-y{
+    animation: marginMoveLetterY 20s;
 }

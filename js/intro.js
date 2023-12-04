@@ -1,37 +1,60 @@
 //resource link: https://www.w3schools.com/jquery/default.asp
 
-$("#cat-img").hide();
+$("#bg-two").hide();
 
-$("#secret-text").hide();
+$("#bg-one").click(function(){
 
-$("#happy-img").click(function(){
-
-    $("#happy-img").hide();
-    $("#cat-img").show();
+    $("#bg-one").hide();
+    $("#bg-two").show();
 });
 
-$("#cat-img").click(function(){
+$("#bg-two").click(function(){
 
-    $("#cat-img").hide();
-    $("#happy-img").show();
+    $("#bg-two").hide();
+    $("#bg-one").show();
 });
 
-$("#toggle-text").click(function(){
+$("#mannequin-img").mousemove(function(){
 
-    $("#secret-text").toggle();
-});
-
-$("#change-bg-color").click(function(){
-
-    $("#home-screen").css("background-color","pink");
-});
-
-$("#secret-text").click(function(){
-
-    $(".main-img").addClass("animate-img");
+    $("#mannequin-img").addClass("animate-img");
     setTimeout(function(){
 
-        $(".main-img").removeClass("animate-img");
-    }, 5000);
+        $("#mannequin-img").removeClass("animate-img");
+    }, 15000);
+});
 
+$("#b-letter").mousemove(function(){
+
+    $("#b-letter").addClass("animate-letter-b");
+    setTimeout(function(){
+
+        $("#b-letter").removeClass("animate-letter-b");
+    }, 15000);
+});
+
+$("#o-letter").mousemove(function(){
+
+    $("#o-letter").addClass("animate-letter-o");
+    setTimeout(function(){
+
+        $("#o-letter").removeClass("animate-letter-o");
+    }, 20000);
+});
+
+$("#d-letter").mousemove(function(){
+
+    $("#d-letter").addClass("animate-letter-d");
+    setTimeout(function(){
+
+        $("#d-letter").removeClass("animate-letter-d");
+    }, 15000);
+});
+
+$("#y-letter").mousemove(function(){
+
+    $("#y-letter").addClass("animate-letter-y");
+    setTimeout(function(){
+
+        $("#y-letter").removeClass("animate-letter-y");
+    }, 20000);
 });
